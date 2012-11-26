@@ -15,6 +15,7 @@ namespace RibbonApplication
         [STAThread]
         static void Main()
         {
+            //注册皮肤
             BonusSkins.Register();
             OfficeSkins.Register();
             SkinManager.EnableFormSkins();
