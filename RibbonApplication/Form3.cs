@@ -11,11 +11,11 @@ namespace RibbonApplication
 {
     /*************************************************************************************
      * CLR  版本:       4.0.30319.586
-     * 类 名 称:       Form2
+     * 类 名 称:       Form3
      * 机器名称:       HSERVER
      * 命名空间:       RibbonApplication
-     * 文 件 名:       Form2
-     * 创建时间:       2012/11/26  16:28:06
+     * 文 件 名:       Form3
+     * 创建时间:       2012/11/27  17:21:40
      * 作    者:       常伟华 Changweihua
      * 签    名:       To be or not, it is not a problem !
      * 网    站:       http://www.cmono.net
@@ -25,19 +25,29 @@ namespace RibbonApplication
      * 修 改 人:
      * 
      ************************************************************************************/
+
     /// <summary>
-    /// Usage of Gallary Control 
+    /// Usage of Popup Menu
     /// </summary>
-    public partial class Form2 : Form
+
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void galleryControl1_Gallery_ItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("aaaaaaaa");
+            //this.popupMenu1.ShowPopup(Control.MousePosition);
+        }
+
+        private void simpleButton1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                this.popupMenu1.ShowPopup(Control.MousePosition);
+            }
         }
     }
 }
