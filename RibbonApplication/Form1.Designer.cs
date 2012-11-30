@@ -54,31 +54,31 @@
             this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.rgHoverImages = new System.Windows.Forms.ImageList(this.components);
             this.rgImages = new System.Windows.Forms.ImageList(this.components);
-            this.largeImages = new System.Windows.Forms.ImageList(this.components);
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
-            this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemRichTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit();
             this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemRadioGroup1 = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
+            this.largeImages = new System.Windows.Forms.ImageList(this.components);
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.galleryControl1 = new DevExpress.XtraBars.Ribbon.GalleryControl();
+            this.galleryControlClient1 = new DevExpress.XtraBars.Ribbon.GalleryControlClient();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
-            this.galleryControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.VistaTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).BeginInit();
+            this.galleryControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -121,8 +121,9 @@
             this.repositoryItemRichTextEdit1,
             this.repositoryItemDateEdit1,
             this.repositoryItemRadioGroup1});
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007;
             this.ribbonControl1.SelectedPage = this.ribbonPage3;
-            this.ribbonControl1.Size = new System.Drawing.Size(782, 153);
+            this.ribbonControl1.Size = new System.Drawing.Size(782, 152);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.barButtonItem1);
             this.ribbonControl1.Toolbar.ItemLinks.Add(this.barSubItem1);
@@ -313,6 +314,52 @@
             this.rgImages.Images.SetKeyName(5, "adobe_air.png");
             this.rgImages.Images.SetKeyName(6, "adobe_flash.png");
             // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Edit = this.repositoryItemRichTextEdit1;
+            this.barEditItem1.EditHeight = 400;
+            this.barEditItem1.Id = 11;
+            this.barEditItem1.Name = "barEditItem1";
+            this.barEditItem1.Width = 150;
+            // 
+            // repositoryItemRichTextEdit1
+            // 
+            this.repositoryItemRichTextEdit1.Name = "repositoryItemRichTextEdit1";
+            this.repositoryItemRichTextEdit1.ShowCaretInReadOnly = false;
+            // 
+            // barEditItem2
+            // 
+            this.barEditItem2.Caption = "Date :";
+            this.barEditItem2.Edit = this.repositoryItemDateEdit1;
+            this.barEditItem2.Id = 12;
+            this.barEditItem2.Name = "barEditItem2";
+            this.barEditItem2.Width = 100;
+            // 
+            // repositoryItemDateEdit1
+            // 
+            this.repositoryItemDateEdit1.AutoHeight = false;
+            this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.Name = "repositoryItemDateEdit1";
+            this.repositoryItemDateEdit1.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            // 
+            // barEditItem3
+            // 
+            this.barEditItem3.Edit = this.repositoryItemRadioGroup1;
+            this.barEditItem3.EditHeight = 400;
+            this.barEditItem3.Id = 13;
+            this.barEditItem3.Name = "barEditItem3";
+            this.barEditItem3.Width = 150;
+            // 
+            // repositoryItemRadioGroup1
+            // 
+            this.repositoryItemRadioGroup1.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Radio Item# 1"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Radio Item# 2"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Radio Item# 3")});
+            this.repositoryItemRadioGroup1.Name = "repositoryItemRadioGroup1";
+            // 
             // largeImages
             // 
             this.largeImages.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("largeImages.ImageStream")));
@@ -364,6 +411,21 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Export";
             // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup3});
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Editor";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.barEditItem1);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barEditItem2);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barEditItem3);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
+            // 
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.barStaticItem1);
@@ -391,68 +453,9 @@
             this.galleryControlClient1.Location = new System.Drawing.Point(2, 2);
             this.galleryControlClient1.Size = new System.Drawing.Size(119, 107);
             // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3});
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "Editor";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barEditItem1);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barEditItem2);
-            this.ribbonPageGroup3.ItemLinks.Add(this.barEditItem3);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
-            // 
-            // barEditItem1
-            // 
-            this.barEditItem1.Edit = this.repositoryItemRichTextEdit1;
-            this.barEditItem1.EditHeight = 400;
-            this.barEditItem1.Id = 11;
-            this.barEditItem1.Name = "barEditItem1";
-            this.barEditItem1.Width = 150;
-            // 
-            // repositoryItemRichTextEdit1
-            // 
-            this.repositoryItemRichTextEdit1.Name = "repositoryItemRichTextEdit1";
-            // 
-            // barEditItem2
-            // 
-            this.barEditItem2.Caption = "Date :";
-            this.barEditItem2.Edit = this.repositoryItemDateEdit1;
-            this.barEditItem2.Id = 12;
-            this.barEditItem2.Name = "barEditItem2";
-            this.barEditItem2.Width = 100;
-            // 
-            // repositoryItemDateEdit1
-            // 
-            this.repositoryItemDateEdit1.AutoHeight = false;
-            this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemDateEdit1.Name = "repositoryItemDateEdit1";
-            this.repositoryItemDateEdit1.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            // 
-            // barEditItem3
-            // 
-            this.barEditItem3.Edit = this.repositoryItemRadioGroup1;
-            this.barEditItem3.EditHeight = 400;
-            this.barEditItem3.Id = 13;
-            this.barEditItem3.Name = "barEditItem3";
-            this.barEditItem3.Width = 150;
-            // 
-            // repositoryItemRadioGroup1
-            // 
-            this.repositoryItemRadioGroup1.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Radio Item# 1"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Radio Item# 2"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "Radio Item# 3")});
-            this.repositoryItemRadioGroup1.Name = "repositoryItemRadioGroup1";
-            // 
             // Form1
             // 
+            this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 423);
@@ -466,12 +469,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
-            this.galleryControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRichTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.VistaTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryControl1)).EndInit();
+            this.galleryControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
